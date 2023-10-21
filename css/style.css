@@ -12,14 +12,19 @@ header{
 }
  header input,button{
     outline: lightblue;
-    border: 2px solid purple;
+    border: 2px solid #5d0c5d;
     border-radius: 10px;
     padding: 5px;
     color: purple;
     }
+     button{
+        background-color: #3f023f;
+        color: aliceblue;
+        margin: 5px;
+    }
 
 footer{
-    background-color: #fcf7f7;
+    background-color: #5d0c5d;
     margin-top: 0;
     
 }
