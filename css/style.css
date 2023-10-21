@@ -1,0 +1,26 @@
+*{
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111;
+    color: #9f9f9f;
+}
+header{
+    background-color: #fcf7f7;
+}
+ header input,button{
+    outline: lightblue;
+    border: 2px solid purple;
+    border-radius: 10px;
+    padding: 5px;
+    color: purple;
+    }
+
+footer{
+    background-color: #fcf7f7;
+    margin-top: 0;
+    
+}
+ 
