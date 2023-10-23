@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css"> 
 </head>
-<body>
+<body  class="animate__animated animate__fadeInUp">
 
     <header class="mb-5">
         <nav class="navbar navbar-expand-lg text-success">
@@ -24,8 +24,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ms-auto text-success">
                 <div class="me-5">
-                    <input type="text" placeholder="Quick search">
-                    <button>Search</button>
+                    <input type="text" placeholder="Quick search" id="searchDetails">
+                    <button id="searchBtn">Search</button>
+                    <p id="result"></p>
                 </div>
                 <a class="nav-link " href="#">Popular</a>
                 <a class="nav-link" href="#">Action </a>
@@ -36,6 +37,7 @@
             </div>
           </div>
         </nav>
+        
     </header>
 
     <section class="container-fluid">
@@ -51,12 +53,13 @@
     <section class="container-fluid">
         <section class="action-section1">
             <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="col-sm-12 col-md-6 col-lg-3" id="skywoman">
                     <a href="book1.html"><img src="https://res.cloudinary.com/dgxavfsxp/image/upload/v1697912463/book1_ood5pl.webp" class="img-fluid mb-3" alt=""></a>
                     <h4>The Sky Woman</h4>
                     <h6> by Charles B. Stilson</h6>
                     <p>PUBLISHED: 1893</p>
                     <p>price: $ 2.50</p>
+                    <p>favourite: <span class="fa  fa-heart [&#xf004;] favourite"></span></p>
                     
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3">
@@ -65,6 +68,7 @@
                     <h6> by Natalie Sumner Lincoln</h6>
                     <p>PUBLISHED: 1918</p>
                     <p>price: $ 10.50</p>
+                    <p>favourite: <span class="fa  fa-heart [&#xf004;] favourite"></span></p>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3">
                     <a href="book3.html"><img src="https://res.cloudinary.com/dgxavfsxp/image/upload/v1697913588/book_gjw6i5.jpg" alt="" class="img-fluid mb-5"></a>
@@ -72,6 +76,7 @@
                     <h6> By William Walker Atkinson</h6>
                     <p>PUBLISHED: 1918</p>
                     <p>price: $ 5.50</p>
+                    <p>favourite: <span class="fa  fa-heart [&#xf004;] favourite"></span></p>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3">                   
                      <a href="book4.html"><img src="https://res.cloudinary.com/dgxavfsxp/image/upload/v1697912827/book4_cdlp95.webp" alt=""     class="img-fluid mb-3"></a>
@@ -79,6 +84,7 @@
                     <h6> By: Jules Verne</h6>
                     <p>PUBLISHED: 1874</p>
                     <p>price: $ 7.99</p>
+                    <p>favourite: <span class="fa  fa-heart [&#xf004;] favourite"></span></p>
                 </div>
             </div>
         </section>
@@ -93,6 +99,7 @@
                     <h6> by Leopoldo Garcia Alas</h6>
                     <p>PUBLISHED: 1892</p>
                     <p>price: $ 4.50</p>
+                    <p>favourite: <span class="fa  fa-heart [&#xf004;] favourite"></span></p>
                     
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3">
@@ -101,6 +108,7 @@
                     <h6> Nikolai Gogol</h6>
                     <p>PUBLISHED: 1842</p>
                     <p>price: $ 7.50</p>
+                    <p>favourite: <span class="fa  fa-heart [&#xf004;] favourite"></span></p>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3">
                     <a href="book7.html"><img src="https://res.cloudinary.com/dgxavfsxp/image/upload/v1697914993/book71_vkntva.webp" alt="" class="img-fluid"></a>
@@ -108,6 +116,7 @@
                     <h6> Murray Leinster</h6>
                     <p>PUBLISHED: 1947</p>
                     <p>price: $ 7.50</p>
+                    <p>favourite: <span class="fa  fa-heart [&#xf004;] favourite"></span></p>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3">                  
                       <a href="book8.html"><img src="https://res.cloudinary.com/dgxavfsxp/image/upload/v1697912882/book8_q1fsur.webp" alt="" class="img-fluid mb-1"></a>
@@ -115,10 +124,18 @@
                     <h6> by Elizabeth Prentiss</h6>
                     <p>PUBLISHED: 2023</p>
                     <p>price: $ 6.50</p>
+                    <p>favourite: <span class="fa  fa-heart [&#xf004;] favourite"></span></p>
                 </div>
                 
             </div>
         </section>
+    </section>
+    <section class="add-book">
+        <input type="text" placeholder="Add Book to Catalogue" id="addBook" autofocus>
+        <button id="btnAddBook">Submit</button>
+        <button id=" showbookdetails">show books</button>
+        <ul id="showBook"></ul>
+        <p  id="resultSshow"></p>
     </section>
     <footer>
      <section class="container-fluid mt-5 pt-5">
@@ -161,5 +178,6 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous">
   </script>
+  <script src="js/script.js"></script>
 </body>
 </html>

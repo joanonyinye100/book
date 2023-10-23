@@ -10,7 +10,7 @@ body{
 header{
     background-color: #fcf7f7;
 }
- header input,button{
+  input,button{
     outline: lightblue;
     border: 2px solid #5d0c5d;
     border-radius: 10px;
